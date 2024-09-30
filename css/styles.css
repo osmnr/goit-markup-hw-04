@@ -11,6 +11,11 @@ ol,ul {
   list-style: none;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
   width:99vw;
@@ -21,6 +26,13 @@ body {
 img {
   display: block;
 }
+
+:hover,
+:focus {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 .page-header{
   max-width:1440px;
@@ -286,6 +298,9 @@ flex:5;
   list-style-type: none;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-item-name-and-position {
@@ -394,6 +409,14 @@ flex:5;
 .porfolio-list-items {
   list-style-type: none;
   flex-basis: calc((100% - 3 * 24px) / 4);
+  position: relative;
+  cursor: pointer;
+}
+
+.porfolio-list-items:hover .portfolio-transition {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-name-and-genre {
@@ -403,6 +426,30 @@ flex:5;
   margin-bottom: 8px;
 }
 
+.portfolio-transition {
+  padding: 8px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 360px;
+  height: 300px;
+  opacity: 0;
+  transform: translateY(50%);
+  }
+
+
+
+.portfolio-p {
+  width: 296px;
+  height: 96px;
+  margin-left: 32px;
+  margin-top: 40px;
+}
 
 .porfolio-solution-genres {
   color: #434455;
@@ -508,3 +555,4 @@ flex:5;
   position: relative;
   fill: #f4f4fd;
 }
+
