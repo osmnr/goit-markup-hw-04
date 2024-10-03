@@ -27,11 +27,6 @@ img {
   display: block;
 }
 
-:hover, :focus {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
 
 .page-header{
   max-width:1440px;
@@ -210,6 +205,7 @@ flex:5;
   margin:0 auto;
   margin-top:35px;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-service-button:hover, .order-service-button:focus{
@@ -420,12 +416,17 @@ flex:5;
   flex-basis: calc((100% - 3 * 24px) / 4);
   position: relative;
   cursor: pointer;
-}
+ }
+
+ .portfolio-list-items:hover{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ }
 
 .portfolio-list-items:hover .portfolio-transition {
   transform: translateY(0);
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .portfolio-name-and-genre {
@@ -437,7 +438,7 @@ flex:5;
 
 .portfolio-transition {
   padding: 8px;
-  background-color: #3f51b5;
+  background-color: #4D5AE5;
   color: #fff;
   font-family: sans-serif;
   position: absolute;
@@ -555,13 +556,11 @@ flex:5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-socials-links:hover, footer-socials-links:focus {
+  background-color: #31D0AA;
+}
+
 .footer-socail-icon{
-  width: 40px;
-  height: 40px;
-  gap: 16px;
-  margin-right: 7px;
-  margin-left: 7px;
-  position: relative;
   fill: #f4f4fd;
 }
 
