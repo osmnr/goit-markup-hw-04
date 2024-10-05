@@ -170,7 +170,6 @@ flex:5;
 .hero-section {
   background-color: #2e2f42;
   color: #ffffff;
-  width:1440px;
   height:600px;
   display:flex;
   justify-content: center;
@@ -216,20 +215,14 @@ flex:5;
 /* Section 2 - features section */
 
 .features-section{
-  width:1440px;
-  height: 200px;
   padding: 120px 0;
 }
 
 
 .feature-lists{
-  width:1128px;
-  height: 104px;
-  display:flex;
+  display: flex;
   gap: 24px;
-  text-align:center;
-  align-items:center;
-  margin:auto;
+  list-style-type: none;
 }
 
 .visually-hidden {
@@ -261,7 +254,6 @@ flex:5;
   width: calc((100% - 72px) / 4);
   list-style-type: none;
   flex:1;
-  
 }
 
 .feature-titles {
@@ -286,9 +278,7 @@ flex:5;
 
 .our-team-section {
   background-color: #f4f4fd;
-  width: 1440px;
   padding: 120px 0;
-  margin-top:100px
 }
 
 .our-team-list {
@@ -370,6 +360,9 @@ flex:5;
   background-color: #404bbf;
 }
 
+.our-team-icons:hover {
+  fill:#f4f4fd;
+}
 
 
 /* Section 4 - Our Portfolio section */
@@ -433,7 +426,6 @@ flex:5;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-transition {
@@ -560,7 +552,10 @@ flex:5;
   background-color: #31D0AA;
 }
 
-.footer-socail-icon{
+.footer-socail-icon {
   fill: #f4f4fd;
 }
 
+.footer-socail-icon:hover {
+  fill:#f4f4fd;
+}
